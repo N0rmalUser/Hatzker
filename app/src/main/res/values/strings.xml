@@ -3,4 +3,8 @@
     <string name="button1">Поле должно быть заполнено</string>
     <string name="button2">Error   code:0x000000</string>
     <string name="button3">Это не URL</string>
+    <string name="more">взломать ещё</string>
+    <string name="hack">Взломать</string>
+    <string name="http">http://</string>
+    <string name="url">URL:</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.hatzker
 
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,9 +13,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mProgressBar: ProgressBar
     private lateinit var mTextView: TextView
     private lateinit var mButtonClear: Button
+    private lateinit var mEditText: EditText
     private var progressStatus = 0
     private var handler = Handler()
-    private lateinit var mEditText: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         mEditText = findViewById(R.id.EditText)
         mButton = findViewById(R.id.button)
         mButton.setOnClickListener {
-            Log.d(ContentValues.TAG, "Кнопка нажата")
+            Log.d(ContentValues.TAG, "Button on")
             if (mEditText.text.isEmpty()) {
                 Toast.makeText(this, R.string.button1, Toast.LENGTH_SHORT).show()
             }
@@ -38,8 +40,8 @@ class MainActivity : AppCompatActivity() {
                     val rnds4 = (1..95).random()
 
                     while (progressStatus <= 98){
-                        // update progress status
                         progressStatus +=1
+
                         if (progressStatus==rnds1 || progressStatus== rnds2 || progressStatus==rnds3 || progressStatus==rnds4){
                             val rnds = (500..3500).random()
                             Thread.sleep(rnds.toLong())

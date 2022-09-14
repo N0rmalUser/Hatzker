@@ -9,14 +9,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="URL:"
+        android:text="@string/url"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.255"
+        tools:ignore="SpUsage" />
 
     <TextView
         android:id="@+id/text"
@@ -28,13 +29,14 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="SpUsage" />
 
     <EditText
         android:id="@+id/EditText"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:hint="http://"
+        android:hint="@string/http"
         android:textSize="15dp"
         android:inputType="textCapWords"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,26 +44,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25"
-        tools:ignore="Autofill,HardcodedText,SpUsage" />
+        tools:ignore="Autofill,SpUsage" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Взломать"
+        android:text="@string/hack"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.35"
-        tools:ignore="HardcodedText,SpUsage" />
+        tools:ignore="SpUsage" />
 
     <Button
         android:id="@+id/clear_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="взломать ещё"
+        android:text="@string/more"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.575"
-        tools:ignore="HardcodedText,SpUsage" />
+        tools:ignore="SpUsage" />
 
     <ProgressBar
         android:id="@+id/progressBar"
